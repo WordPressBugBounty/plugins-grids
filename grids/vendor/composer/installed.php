@@ -1,24 +1,23 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'name' => 'justevolve/grids',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '76dc12fde629fae9370dfec6e3ecdfa3ddde0b06',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
     ),
-    'reference' => '8b61260d4d1167ebe130ed2815e338e907c3486c',
-    'name' => 'justevolve/grids',
-  ),
-  'versions' => 
-  array (
-    'justevolve/grids' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '8b61260d4d1167ebe130ed2815e338e907c3486c',
+    'versions' => array(
+        'justevolve/grids' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '76dc12fde629fae9370dfec6e3ecdfa3ddde0b06',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
     ),
-  ),
 );

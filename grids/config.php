@@ -28,31 +28,31 @@ $sizes = array(
 		'width'  => true,
 		'height' => true,
 		'crop'   => false,
-		'label' => __( 'Full size', 'grids' )
+		'label'  => __( 'Full size', 'grids' ),
 	),
 	'large' => array(
 		'width'  => intval( get_option( 'large_size_w' ) ),
 		'height' => intval( get_option( 'large_size_h' ) ),
 		'crop'   => false,
-		'label' => __( 'Large', 'grids' )
+		'label'  => __( 'Large', 'grids' ),
 	),
 	'medium' => array(
 		'width'  => intval( get_option( 'medium_size_w' ) ),
 		'height' => intval( get_option( 'medium_size_h' ) ),
 		'crop'   => false,
-		'label' => __( 'Medium', 'grids' )
+		'label'  => __( 'Medium', 'grids' ),
 	),
 	'thumbnail' => array(
 		'width'  => intval( get_option( 'thumbnail_size_w' ) ),
 		'height' => intval( get_option( 'thumbnail_size_h' ) ),
 		'crop'   => (bool) get_option( 'thumbnail_crop' ),
-		'label' => __( 'Thumbnail', 'grids' )
+		'label'  => __( 'Thumbnail', 'grids' ),
 	),
 );
 
 if ( $_wp_additional_image_sizes ) {
 	foreach ( $_wp_additional_image_sizes as $handle => $size ) {
-		$sizes[ $handle ] = $size;
+		$sizes[ $handle ]            = $size;
 		$sizes[ $handle ][ 'label' ] = $handle;
 	}
 }
@@ -75,18 +75,18 @@ $breakpoints = array(
 		'min'   => '',
 		'max'   => '768',
 		'media' => '',
-	)
+	),
 );
 
 $strings = array(
 	'plugin' => array(
-		'name' => 'Grids'
+		'name' => 'Grids',
 	),
 	'layouts' => array(
 		'full' => __( 'Full', 'grids' ),
 		'50'   => __( '50%', 'grids' ),
 		'33'   => __( '33%', 'grids' ),
-		'25'   => __( '25%', 'grids' )
+		'25'   => __( '25%', 'grids' ),
 	),
 	'area' => array(
 		'title'                     => __( 'Area', 'grids' ),
@@ -109,11 +109,15 @@ $strings = array(
 			'remove_area'           => __( 'Remove Area', 'grids' ),
 			'insert_in_page'        => __( 'Insert in page', 'grids' ),
 			'confirm_layout_change' => __( 'Ok', 'grids' ),
-		)
+		),
+		'ac_cta' => array(
+			'text'   => __( 'Advanced Columns is the successor to Grids: a new and more powerful way to build responsive layouts in WordPress.', 'grids' ),
+			'action' => __( 'Tell me more!', 'grids' ),
+		),
 	),
 	'components' => array(
 		'media_switch' => array(
-			'device' => __( 'Device', 'grids' )
+			'device' => __( 'Device', 'grids' ),
 		),
 		'background' => array(
 			'title'                      => __( 'Background', 'grids' ),
@@ -147,12 +151,12 @@ $strings = array(
 			'attachment'                 => __( 'Attachment', 'grids' ),
 			'attachment_scroll'          => __( 'Scroll', 'grids' ),
 			'attachment_fixed'           => __( 'Fixed', 'grids' ),
-			'stretch'					 => _x( 'Extend to viewport sides', 'background stretch', 'grids' ),
+			'stretch'                    => _x( 'Extend to viewport sides', 'background stretch', 'grids' ),
 		),
 		'size' => array(
 			'value'       => __( 'Value', 'grids' ),
 			'unit'        => __( 'Unit', 'grids' ),
-			'select_unit' => __( 'Select the unit', 'grids' )
+			'select_unit' => __( 'Select the unit', 'grids' ),
 		),
 		'spacing' => array(
 			'gutter_x'       => __( 'Horizontal gutter', 'grids' ),
@@ -187,23 +191,23 @@ $strings = array(
 		'display' => array(
 			'title'   => __( 'Display', 'grids' ),
 			'zIndex'  => __( 'Stack order (z-index)', 'grids' ),
-			'display' => __( 'Show', 'grids' )
-		)
+			'display' => __( 'Show', 'grids' ),
+		),
 	),
 	'options' => array(
-		'wide_width' => __( 'Extend the editor width', 'grids' ),
-		'wide_width_help' => __( 'This option will only work if the current theme isn\'t changing the editor width.', 'grids' )
-	)
+		'wide_width'      => __( 'Extend the editor width', 'grids' ),
+		'wide_width_help' => __( 'This option will only work if the current theme isn\'t changing the editor width.', 'grids' ),
+	),
 );
 
 $designer = array(
 	'columns' => 12,
-	'rows' => 6
+	'rows'    => 6,
 );
 
 $area = array(
 	/* Define blocks allowed to be used in areas. The option is an array containing block types (eg. core/paragraph, etc.). */
-	'allowedBlocks' => null
+	'allowedBlocks' => null,
 );
 
 $general = array(
@@ -215,14 +219,14 @@ $general = array(
 		array( 'label' => 'rem', 'value' => 'rem' ),
 		array( 'label' => 'vh', 'value' => 'vh' ),
 		array( 'label' => 'vw', 'value' => 'vw' ),
-	)
+	),
 );
 
 return array(
-	'designer'	  => $designer,
+	'designer'    => $designer,
 	'breakpoints' => $breakpoints,
 	'image_sizes' => $sizes,
 	'strings'     => $strings,
-	'area'		  => $area,
-	'general'	  => $general
+	'area'        => $area,
+	'general'     => $general,
 );

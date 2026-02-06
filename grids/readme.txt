@@ -1,12 +1,12 @@
 === Grids: Layout builder for WordPress ===
 Contributors: evolvesnc,andg,simo_m,marialaurascarnera
 Tags: page builder, gutenberg, gutenberg blocks, blocks, block-editor, grid-layout
-Requires at least: 5.0.0
-Tested up to: 6.4.1
+Requires at least: 6.3
+Tested up to: 6.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 5.6
-Stable tag: 1.3.10
+Stable tag: 1.3.11
 
 The most advanced page and layout builder for Gutenberg and the new Block Editor, with columns, rows and responsive controls.
 
@@ -29,9 +29,6 @@ For more elaborated compositions, the <strong>Grid Designer</strong> allows you 
 👉 <strong>Want to know more? Read the plugin documentation!</strong> 👉 <a href="https://justevolve.it/grids/documentation/">https://justevolve.it/grids/documentation/</a>
 
 👉 <strong>Still struggling?</strong> That may depend on one of the known issues 👉 <a href="https://justevolve.it/grids/documentation/known-issues/">https://justevolve.it/grids/documentation/known-issues/</a>
-
-😎 <strong>Watch Grids while it's shown on stage by Matt Mullenweg at WordCamp Europe 2019!</strong>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/UE18IsncB7s?start=13654&end=13675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 == Installation ==
 
@@ -60,6 +57,12 @@ Support on the plugin page on WordPress.org is completely voluntary. Feel free t
 4. Grids offers multiple advanced controls to modify the appearance of your content.
 
 == Changelog ==
+
+=== 👉 1.3.11 ===
+
+* FIX: Message regarding translations being loaded too early
+* FIX: Styles and scripts correctly load in the editor iframe
+* FIX: Compatibility with WordPress 6.9
 
 === 👉 1.3.10 ===
 

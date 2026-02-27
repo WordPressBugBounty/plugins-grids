@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) die( 'Forbidden' );
 /**
  * Plugin Name: Grids
  * Description: Layout builder for WordPress.
- * Version: 1.3.11
+ * Version: 1.3.12
  * Plugin URI: https://justevolve.it/grids/
  * Author: Evolve
  * Author URI: https://justevolve.it/
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) die( 'Forbidden' );
  *
  * @package   Grids
  * @author 	  Evolve <info@justevolve.it>
- * @copyright Copyright (c) 2025
+ * @copyright Copyright (c) 2026
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -48,7 +48,7 @@ function grids_setup() {
 	define( 'GRIDS', true );
 
 	/* Plugin version. */
-	define( 'GRIDS_VERSION', '1.3.11' );
+	define( 'GRIDS_VERSION', '1.3.12' );
 
 	/* Main plugin folder constant. */
 	define( 'GRIDS_FOLDER', trailingslashit( dirname( __FILE__ ) ) );

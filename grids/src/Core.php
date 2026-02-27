@@ -338,7 +338,7 @@ class Core {
 	 */
 	public function declare_blocks() {
 		/* Enqueue admin assets. */
-		add_action( 'enqueue_block_assets', array( $this, 'enqueue_admin_scripts' ), 20 );
+		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_admin_scripts' ), 20 );
 
 		foreach( $this->get_blocks_list() as $block ) {
 			( new $block() );

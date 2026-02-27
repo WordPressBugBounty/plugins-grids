@@ -6,7 +6,7 @@ Tested up to: 6.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 5.6
-Stable tag: 1.3.11
+Stable tag: 1.3.12
 
 The most advanced page and layout builder for Gutenberg and the new Block Editor, with columns, rows and responsive controls.
 
@@ -57,6 +57,10 @@ Support on the plugin page on WordPress.org is completely voluntary. Feel free t
 4. Grids offers multiple advanced controls to modify the appearance of your content.
 
 == Changelog ==
+
+=== 👉 1.3.12 ===
+
+* FIX: Prevented admin assets from being enqueued on the frontend.
 
 === 👉 1.3.11 ===
 
